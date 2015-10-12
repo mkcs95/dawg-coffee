@@ -1,0 +1,80 @@
+/* Your stylesheet goes here */
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+
+* {
+	font-family:Lato, "Helvetica Neue", Helvetica, Serif;
+	font-size:16px;
+	font-weight:300;
+	background-color:#E9EAEE;
+}
+
+body {
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+h1 {
+	padding-top: 3em;
+	font-family:Raleway, "Helvetica Neue", Helvetica, Serif;
+}
+
+h2 {
+	font-family: Raleway, "Helvetica Neue", Helvetica, Serif;
+	font-color:#BC6026;
+	text-align: center;
+}
+
+svg path {
+	fill:white;
+}
+
+svg {
+	height: 16px;
+}
+
+img {
+	height:16px;
+}
+
+#container {
+	padding-top: 3em;
+}
+
+#headline {
+	font-style: italic;
+	width: 100%;
+	background-color: gray;
+	height: 200px;
+	
+}
+
+nav {
+	position: fixed;
+	top: 0px;
+	background-color: #181C22;
+	color: white;
+	font-size: 16px;
+	padding-left: 15px;
+	width: 100%;
+}
+
+nav li {
+	list-style-type: none;
+	display: inline;
+	padding: 0.5em;
+	font-variant: small-caps;
+}
+
+nav li a {
+	color: white;
+
+}
+
+nav li a:hover {
+	text-decoration: none;
+	color: #D87E28;
+}
