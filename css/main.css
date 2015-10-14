@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Lato");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+/*These are the links to import the Bootstrap and fonts*/
 /*
 * {
 	font-family:Lato, "Helvetica Neue", Helvetica, Serif;
@@ -28,31 +29,35 @@ h2 {
 	font-color:#BC6026;
 	text-align: center;
 }
+
+/*h2 #clog {
+	font-color:#D87E28;
+	font-size: auto;
+	border: 0em;
+}
+*/
+
 h3 {
 	font-family:Raleway, "Helvetica Neue", Helvetica, Serif;
 	text-align: center;
 	color: #D87E28;
 	font-size: auto;
 	border: 0em;
+	margin: 0em;
+	padding-bottom: 1em;
 }
-
+/*This is just formatting all the svg on the page without the icons for different sections*/
 svg {
 	height: 30px;
 }
-
+/*This is to change the color of the svg pictures*/
 svg path {
 	fill: #D87E28;
-
 }
 
 #coffee svg path {
 	fill: white;
 }
-
-/*img {
-	height:16px;
-}
-*/
 
 #header {
 	padding-top: 3em;
@@ -83,6 +88,7 @@ svg path {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .days1 {
@@ -107,6 +113,7 @@ svg path {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 #contact svg {
@@ -114,6 +121,7 @@ svg path {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 50px;
+	margin-bottom: 40px;
 }
 
 #contact ul {
@@ -169,33 +177,53 @@ svg path {
 	font-style: italic;
 	font-weight: normal;
 	font-size: auto;
-	position: relative;
+	
 	right: 1em;
 }
 
 .story {
-	background-color: #dbdce3
+	background-color: #dbdce3;
+	padding-bottom: 3em;
+	padding-left: 2em;
 }
 
 .story img {
 	float: right;
-	height: 300px;
+	height: 400px;
 	margin-left: 1em;
 	border: auto solid;
     border-radius: 5px;
 }
-#footer {
-	border-top: 3px;
-	border-top-color: #D87E28
+
+/*.story p{
+	
+}
+*/
+/* #footer {
+	border-top: 3px solid #D87E28;
+	/*border-top-color: #D87E28
 	background-color: #afb3c2
 	padding: 1em;
+} */
+
+
+.bottom {
+	background-color: #afb3c2;
+	border-top: 3px solid #D87E28;
+	padding: 1em;
+	text-align: center;
 }
-#credits {
+.bottom span{
 	font-size: 12px;
 }
 
+#credits, #credits a {
+	font-size: 12px;
+}
+ 
 
 
+/*This is the formatting of the navigation bar*/
 nav {
 	position: fixed;
 	top: 0px;
@@ -204,6 +232,7 @@ nav {
 	font-size: 16px;
 	padding-left: 15px;
 	width: 100%;
+	z-index: 9999;
 }
 
 nav li {
@@ -223,6 +252,7 @@ nav li a:hover {
 	color: #D87E28;
 }
 
+/*This is to format from minimum width to 768*/
 @media (min-width: 768px) {
 	* {
 		font-size: 20px;
@@ -231,6 +261,7 @@ nav li a:hover {
 		text-align: center;
 		height: 20px;
 	}
+
 	nav {
 		background-color: rgba(24, 28, 34, 0.8);
 	}
@@ -272,6 +303,7 @@ nav li a:hover {
 	}
 }
 
+/*Format from 768 to 992 screen size*/
 @media screen and (min-width: 992px) {
 	.container {
 		background-image: url('../img/background-md.jpg');
@@ -289,7 +321,6 @@ nav li a:hover {
 		font-size: 1.25em;
 		text-align: center;
 		padding-top: 3em;
-		padding-bottom: 3em;
 	}
 	#headline {
 		font-size: 1.25em;
@@ -303,10 +334,6 @@ nav li a:hover {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	#menu{
-		background-color: #dbdce3;
-		width: 100%;
-	}
 
 	#titles {
 		background-color: #dbdce3;
@@ -316,15 +343,9 @@ nav li a:hover {
 	#menu a:hover {
 		text-decoration: none;
 	}
-	.story img{
-		height: 400px;
-	}
-	#citations {
-		text-align: right;
-	}
-
 }
 
+/*Format for 992-1200 screen width*/
 @media screen and (min-width: 1200px) {
 	.container {
 		background-image: url('../img/background-lg.jpg');
@@ -334,7 +355,6 @@ nav li a:hover {
 		font-size: 1.25em;
 		text-align: center;
 		padding-top: 3em;
-		padding-bottom: 3em;
 	}
 	#headline {
 		font-size: 1.25em;
@@ -360,12 +380,6 @@ nav li a:hover {
 
 	#menu a:hover {
 		text-decoration: none;
-	}
-	.story img{
-		height: 400px;
-	}
-	#citations {
-		text-align: right;
 	}
 
 }
